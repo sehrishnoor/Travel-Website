@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wanderly — Travel Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Wanderly</a>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="policies.html">Policies</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image: url('https://picsum.photos/id/1018/1600/900');">
+    <div class="container hero-content">
+      <h1>Explore the world with confidence.</h1>
+      <p>Hand-picked destinations, curated travel plans, and unforgettable experiences.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#destinations">Explore Destinations</a>
+        <a class="btn btn-ghost" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Featured Destinations -->
+    <section id="destinations" class="container section">
+      <h2 class="section-title">Featured Destinations</h2>
+      <p class="section-sub">Handpicked places for every kind of traveler</p>
+      <div class="grid grid-3">
+        <article class="card">
+          <img src="https://picsum.photos/id/1011/600/400" alt="Destination 1">
+          <div class="card-body">
+            <h3>Coastal Getaway — Amalfi</h3>
+            <p>Clifftop villages, turquoise waters, and scenic coastal drives.</p>
+            <a class="read-more" href="about.html">Learn More →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/id/1003/600/400" alt="Destination 2">
+          <div class="card-body">
+            <h3>Mountain Retreat — Swiss Alps</h3>
+            <p>Snowy peaks, alpine lakes, and cozy chalet stays.</p>
+            <a class="read-more" href="about.html">Learn More →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/id/1025/600/400" alt="Destination 3">
+          <div class="card-body">
+            <h3>Desert Adventure — Sahara</h3>
+            <p>Vast dunes, starry skies and cultural desert camps.</p>
+            <a class="read-more" href="about.html">Learn More →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">What Travelers Say</h2>
+        <div class="grid grid-3 testimonials">
+          <blockquote class="testimonial">
+            <img src="https://picsum.photos/seed/user1/120" alt="User 1">
+            <p>"The itinerary was flawless — best trip of our lives."</p>
+            <cite>— Ayesha K.</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <img src="https://picsum.photos/seed/user2/120" alt="User 2">
+            <p>"Excellent customer service and beautiful locations."</p>
+            <cite>— Omar R.</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <img src="https://picsum.photos/seed/user3/120" alt="User 3">
+            <p>"Highly recommend — everything was taken care of."</p>
+            <cite>— Sara L.</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / newsletter -->
+    <section class="container section">
+      <div class="cta">
+        <div>
+          <h3>Ready to plan your next trip?</h3>
+          <p>Tell us where you want to go and we'll handle the rest.</p>
+        </div>
+        <form id="newsletter-form" class="newsletter">
+          <input type="email" name="email" placeholder="Your email address" required>
+          <button class="btn btn-primary">Get Started</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a class="footer-logo" href="index.html">Wanderly</a>
+        <p>Explore the world with curated travel experiences.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Phone: +92 300 0000000<br>Email: info@wanderly.example</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <p class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a> ·
+          <a href="#" aria-label="Facebook">Facebook</a> ·
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Wanderly. All rights reserved.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
