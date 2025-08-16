@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Wanderly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Wanderly</a>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="policies.html">Policies</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background-image: url('https://picsum.photos/id/1020/1600/600');">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you — questions, trip requests, or special requirements.</p>
+    </div>
+  </section>
+
+  <main class="container section">
+    <div class="grid grid-2 contact-grid">
+      <section>
+        <h2 class="section-title">Send a Message</h2>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" id="message" rows="6" placeholder="Tell us about your trip idea..." required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </div>
+          <p id="contact-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <aside>
+        <h2 class="section-title">Contact Details</h2>
+        <p><strong>Phone:</strong> +92 300 0000000</p>
+        <p><strong>Email:</strong> info@wanderly.example</p>
+        <p><strong>Address:</strong> 123 Travel Lane, Lahore, Pakistan</p>
+
+        <h3 class="section-sub">Visit Us</h3>
+        <!-- Embed Google Map (placeholder coordinates of Lahore) -->
+        <div class="map-wrap">
+          <iframe
+            title="Wanderly Office Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0000000000005!2d74.35000000000001!3d31.516000000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904d000000000%3A0x0000000000000000!2sLahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+            width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a class="footer-logo" href="index.html">Wanderly</a>
+        <p>Explore the world with curated travel experiences.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Phone: +92 300 0000000<br>Email: info@wanderly.example</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <p class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a> ·
+          <a href="#" aria-label="Facebook">Facebook</a> ·
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year3"></span> Wanderly. All rights reserved.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
